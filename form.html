@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форми — Реєстрація та Зворотний зв’язок</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Лабораторна робота №2</h1>
+    <h2>Варіант 1 — Форма реєстрації</h2>
+
+    <form id="registerForm">
+      <label>Ім’я:</label>
+      <input type="text" id="regName" placeholder="Введіть ім’я" required />
+
+      <label>Email:</label>
+      <input type="email" id="regEmail" placeholder="Введіть email" required />
+
+      <label>Пароль:</label>
+      <input
+        type="password"
+        id="regPassword"
+        placeholder="Введіть пароль"
+        required
+      />
+
+      <label>Повтор пароля:</label>
+      <input
+        type="password"
+        id="regConfirm"
+        placeholder="Повторіть пароль"
+        required
+      />
+
+      <button type="submit">Надіслати</button>
+    </form>
+
+    <h2>Варіант 2 — Зворотний зв’язок</h2>
+
+    <form id="feedbackForm">
+      <label>Ім’я:</label>
+      <input type="text" id="fbName" placeholder="Ваше ім’я" required />
+
+      <label>Email:</label>
+      <input type="email" id="fbEmail" placeholder="Ваш email" required />
+
+      <label>Повідомлення:</label>
+      <textarea
+        id="fbMessage"
+        placeholder="Введіть повідомлення"
+        required
+      ></textarea>
+
+      <button type="submit">Надіслати</button>
+    </form>
+  </body>
+</html>
